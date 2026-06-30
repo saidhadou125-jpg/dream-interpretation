@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التصنيفات - تفسير الأحلام</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-moon"></i>
+                <span>تفسير الأحلام</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="symbols.html">قاموس الرموز</a></li>
+                <li><a href="categories.html" class="active">التصنيفات</a></li>
+                <li><a href="about.html">عن الموقع</a></li>
+            </ul>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main class="categories-page">
+        <div class="page-header">
+            <h1>تصنيفات الأحلام</h1>
+            <p>تصفح الرموز حسب المواضيع والتصنيفات</p>
+        </div>
+        <div class="categories-detail-grid" id="categoriesDetailGrid"></div>
+    </main>
+
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <button class="modal-close" onclick="closeModal()">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-content" id="modalContent"></div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>© 2026 موقع تفسير الأحلام</p>
+        </div>
+    </footer>
+
+    <script src="dreams-data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

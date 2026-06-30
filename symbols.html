@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قاموس الرموز - تفسير الأحلام</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-moon"></i>
+                <span>تفسير الأحلام</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="symbols.html" class="active">قاموس الرموز</a></li>
+                <li><a href="categories.html">التصنيفات</a></li>
+                <li><a href="about.html">عن الموقع</a></li>
+            </ul>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main class="symbols-page">
+        <div class="page-header">
+            <h1>قاموس الرموز</h1>
+            <p>استكشف مئات الرموز المفسرة من كتب أهل التعبير</p>
+        </div>
+
+        <div class="symbols-search">
+            <div class="search-input-wrapper">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" id="symbolsSearch" placeholder="ابحث عن رمز..." autocomplete="off">
+            </div>
+        </div>
+
+        <div class="alphabet-filter">
+            <button class="alphabet-btn active" data-letter="all">الكل</button>
+            <button class="alphabet-btn" data-letter="أ">أ</button>
+            <button class="alphabet-btn" data-letter="ب">ب</button>
+            <button class="alphabet-btn" data-letter="ت">ت</button>
+            <button class="alphabet-btn" data-letter="ث">ث</button>
+            <button class="alphabet-btn" data-letter="ج">ج</button>
+            <button class="alphabet-btn" data-letter="ح">ح</button>
+            <button class="alphabet-btn" data-letter="خ">خ</button>
+            <button class="alphabet-btn" data-letter="د">د</button>
+            <button class="alphabet-btn" data-letter="ذ">ذ</button>
+            <button class="alphabet-btn" data-letter="ر">ر</button>
+            <button class="alphabet-btn" data-letter="ز">ز</button>
+            <button class="alphabet-btn" data-letter="س">س</button>
+            <button class="alphabet-btn" data-letter="ش">ش</button>
+            <button class="alphabet-btn" data-letter="ص">ص</button>
+            <button class="alphabet-btn" data-letter="ض">ض</button>
+            <button class="alphabet-btn" data-letter="ط">ط</button>
+            <button class="alphabet-btn" data-letter="ظ">ظ</button>
+            <button class="alphabet-btn" data-letter="ع">ع</button>
+            <button class="alphabet-btn" data-letter="غ">غ</button>
+            <button class="alphabet-btn" data-letter="ف">ف</button>
+            <button class="alphabet-btn" data-letter="ق">ق</button>
+            <button class="alphabet-btn" data-letter="ك">ك</button>
+            <button class="alphabet-btn" data-letter="ل">ل</button>
+            <button class="alphabet-btn" data-letter="م">م</button>
+            <button class="alphabet-btn" data-letter="ن">ن</button>
+            <button class="alphabet-btn" data-letter="ه">ه</button>
+            <button class="alphabet-btn" data-letter="و">و</button>
+            <button class="alphabet-btn" data-letter="ي">ي</button>
+        </div>
+
+        <div class="symbols-list" id="symbolsList"></div>
+    </main>
+
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <button class="modal-close" onclick="closeModal()">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-content" id="modalContent"></div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4><i class="fas fa-moon"></i> تفسير الأحلام</h4>
+                <p>موقع شامل لتفسير الأحلام وفق كتب أهل التعبير المعتمدة.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 موقع تفسير الأحلام</p>
+        </div>
+    </footer>
+
+    <script src="dreams-data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
